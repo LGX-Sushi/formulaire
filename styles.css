@@ -1,0 +1,94 @@
+#quiz-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.question {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000; /* Ajoute une bordure de 1 pixel autour de chaque question */
+    padding: 20px; /* Ajoute un peu d'espace à l'intérieur de la bordure */
+    border-radius: 5px; /* Ajoute des coins arrondis à la bordure */
+}
+.question img {
+    width: 200px;
+    height: 200px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.option {
+    width: 125px;
+    text-align: center;
+}
+
+.option img {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000; /* Ajoute une bordure de 1 pixel autour de chaque question */
+    padding: 1px; /* Ajoute un peu d'espace à l'intérieur de la bordure */
+    border-radius: 10px; /* Ajoute des coins arrondis à la bordure */
+    transform: scale(1.1); /* Zoom de 10% (ajuste le facteur d'échelle selon vos préférences) */
+}
+
+#submit-button {
+    display: block;
+    margin: 20px auto;
+    transform: scale(1.2); /* Zoom de 10% (ajuste le facteur d'échelle selon vos préférences) */
+}
+
+/* Ajoutez ces règles pour la surbrillance bleue au survol */
+.option img:hover {
+    outline: 3px solid rgba(0, 0, 255, 0.541);
+}
+
+/* Ajoutez ces règles pour garder le bord après le clic */
+.option img.clicked {
+    outline: 3px solid rgba(0, 183, 255, 0.596);
+}
+
+/* Ajoutez ces règles pour la surbrillance en vert ou rouge après validation */
+.option img.correct {
+    outline-color: green;
+}
+
+.option img.incorrect {
+    outline-color: red;
+}
+
+#version-buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Empêche le passage à la ligne des éléments */
+}
+
+.image-cell {
+    flex:1;
+    margin: 0; /* Réinitialise la marge */
+    padding: 0; /* Réinitialise le padding */
+}
+
+.image-cell .arrow-small {
+    width: 35px;
+    height: 35px;
+    transform: rotate(180deg); /* Rotation de 180 degrés */
+}
+
+.image-row {
+    display: flex;
+    align-items: center;
+    margin:25px;
+}

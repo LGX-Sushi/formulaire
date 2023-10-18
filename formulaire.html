@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="formulaire.css">
+</head>
+<body>
+    <h1>Questionnaire sur les Versions</h1>
+    <form id="questionnaire-form" action="https://us-central1-ivory-totem-402415.cloudfunctions.net/function-1" method="post">
+        <div class="question">
+            <p>Quelle version était la plus facile à lire ?</p>
+            <input type="radio" name="facile" value="V1" id="facile-v1">
+            <label for="facile-v1">V1</label>
+            <input type="radio" name="facile" value="V2" id="facile-v2">
+            <label for="facile-v2">V2</label>
+            <input type="radio" name="facile" value="V3" id="facile-v3">
+            <label for="facile-v3">V3</label>
+            <input type="radio" name="facile" value="V4" id="facile-v4">
+            <label for="facile-v4">V4</label>
+            <div class="remarks">
+                <label for="remarks-facile">Remarques supplémentaires:</label>
+                <textarea id="remarks-facile" name="remarks-facile"></textarea>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>Quelle version était la plus compliquée ?</p>
+            <input type="radio" name="compliquee" value="V1" id="compliquee-v1">
+            <label for="compliquee-v1">V1</label>
+            <input type="radio" name="compliquee" value="V2" id="compliquee-v2">
+            <label for="compliquee-v2">V2</label>
+            <input type="radio" name="compliquee" value="V3" id="compliquee-v3">
+            <label for="compliquee-v3">V3</label>
+            <input type="radio" name="compliquee" value="V4" id="compliquee-v4">
+            <label for="compliquee-v4">V4</label>
+            <div class="remarks">
+                <label for="remarks-compliquee">Remarques supplémentaires:</label>
+                <textarea id="remarks-compliquee" name="remarks-compliquee"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="Soumettre">
+    </form>
+
+    <script>
+        // Fonction pour ajuster automatiquement la hauteur de la textarea
+        function adjustTextareaHeight(textarea) {
+            textarea.style.height = "auto";  // Réinitialise d'abord la hauteur à "auto" pour éviter un débordement
+    
+            // Définir la nouvelle hauteur en fonction du contenu
+            textarea.style.height = textarea.scrollHeight + "px";
+        }
+    
+        // Attachez cette fonction aux événements d'entrée de texte (keypress, input, change, etc.)
+        const textareas = document.querySelectorAll("textarea");
+    
+        textareas.forEach(textarea => {
+            textarea.addEventListener("input", () => {
+                adjustTextareaHeight(textarea);
+            });
+        });
+    </script>
+    
+</body>
+</html>

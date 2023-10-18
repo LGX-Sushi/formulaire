@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QCM Web</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="utf-8">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+<body>
+    <div id="version-buttons">
+        <button id="v1-button">Version 1</button>
+        <button id="v2-button">Version 2</button>
+        <button id="v3-button">Version 3</button>
+        <button id="v4-button">Version 4</button>
+    </div>
+    <div id="quiz-container">
+        <div class="question">
+            <h3>Question 1</h3>
+            <img src="imgs_v2/question1.png" alt="Question 1 Image">
+            <div class="options">
+                <div class="option">
+                    <img src="imgs_v2/q1a1.png" alt="Option A" data-correct="true">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q1a2.png" alt="Option B" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q1a3.png" alt="Option C" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q1a4.png" alt="Option D" data-correct="false">
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Question 2</h3>
+            <img src="imgs_v2/question2.png" alt="Question 2 Image">
+            <div class="options">
+                <div class="option">
+                    <img src="imgs_v2/q2a1.png" alt="Option A" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q2a2.png" alt="Option B" data-correct="true">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q2a3.png" alt="Option C" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q2a4.png" alt="Option D" data-correct="false">
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Question 3</h3>
+            <div class="image-grid">
+                <div class="image-pair">
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <img src="imgs_v2/question3_01.png" alt="Image 1">
+                        </div>
+                        <div class="image-cell">
+                            <img src="imgs_v2/arrow.png" alt="Arrow 1" class="arrow-small">
+                        </div>
+                        <div class="image-cell">
+                            <img src="imgs_v2/question3_02.png" alt="Image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="image-pair">
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <img src="imgs_v2/question3_03.png" alt="Image 3">
+                        </div>
+                        <div class="image-cell">
+                            <img src="imgs_v2/arrow.png" alt="Arrow 2" class="arrow-small">
+                        </div>
+                        <div class="image-cell">
+                            <img src="imgs_v2/question3_04.png" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+                <div class="option">
+                    <img src="imgs_v2/q3a1.png" alt="Option A" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q3a2.png" alt="Option B" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q3a3.png" alt="Option C" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q3a4.png" alt="Option D" data-correct="true">
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>Question 4</h3>
+            <div class="image-grid">
+                <div class="image-pair">
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <img src="imgs_v2/question4_01.png" alt="Image 1">
+                        </div>
+                        <div class="image-cell">
+                            <img src="imgs_v2/arrow.png" alt="Arrow 1" class="arrow-small">
+                        </div>
+                        <div class="image-cell">
+                            <img src="imgs_v2/question4_02.png" alt="Image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="image-pair">
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <img src="imgs_v2/question4_03.png" alt="Image 3">
+                        </div>
+                        <div class="image-cell">
+                            <img src="imgs_v2/arrow.png" alt="Arrow 2" class="arrow-small">
+                        </div>
+                        <div class="image-cell">
+                            <img src="imgs_v2/question4_04.png" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+                <div class="option">
+                    <img src="imgs_v2/q4a1.png" alt="Option A" data-correct="flase">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q4a2.png" alt="Option B" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q4a3.png" alt="Option C" data-correct="false">
+                </div>
+                <div class="option">
+                    <img src="imgs_v2/q4a4.png" alt="Option D" data-correct="true">
+                </div>
+            </div>
+        </div>
+        <!-- Add more questions here -->
+    </div>
+    <button id="submit-button">Submit</button>
+    <button id="shuffle-button">Mélanger les réponses</button>
+</body>
+</html>
